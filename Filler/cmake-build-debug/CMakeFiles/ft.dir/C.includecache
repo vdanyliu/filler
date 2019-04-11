@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vdanyliu/Desktop/Filler/libft/ft_printf.h
+libft.h
+/Users/vdanyliu/Desktop/Filler/libft/libft.h
+stdarg.h
+-
+
+/Users/vdanyliu/Desktop/Filler/libft/get_next_line.c
+libft.h
+/Users/vdanyliu/Desktop/Filler/libft/libft.h
+
+/Users/vdanyliu/Desktop/Filler/libft/libft.h
+fcntl.h
+-
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+stdio.h
+-
+sys/stat.h
+-
+sys/types.h
+-
+ft_printf.h
+/Users/vdanyliu/Desktop/Filler/libft/ft_printf.h
+
