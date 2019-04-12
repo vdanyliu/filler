@@ -125,10 +125,19 @@
 		<Unit filename="/Users/vdanyliu/Desktop/Filler/filler.h">
 			<Option target="Filler"/>
 		</Unit>
+		<Unit filename="/Users/vdanyliu/Desktop/Filler/fr_brute_force.c">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/vdanyliu/Desktop/Filler/fr_filler.c">
+			<Option target="Filler"/>
+		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/Filler/fr_main.c">
 			<Option target="Filler"/>
 		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/Filler/fr_map_list.c">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/vdanyliu/Desktop/Filler/fr_usefull.c">
 			<Option target="Filler"/>
 		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/Filler/libft/ft_atoi.c">

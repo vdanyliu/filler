@@ -136,6 +136,60 @@ ft/fast:
 	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/build
 .PHONY : ft/fast
 
+fr_brute_force.o: fr_brute_force.c.o
+
+.PHONY : fr_brute_force.o
+
+# target to build an object file
+fr_brute_force.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_brute_force.c.o
+.PHONY : fr_brute_force.c.o
+
+fr_brute_force.i: fr_brute_force.c.i
+
+.PHONY : fr_brute_force.i
+
+# target to preprocess a source file
+fr_brute_force.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_brute_force.c.i
+.PHONY : fr_brute_force.c.i
+
+fr_brute_force.s: fr_brute_force.c.s
+
+.PHONY : fr_brute_force.s
+
+# target to generate assembly for a file
+fr_brute_force.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_brute_force.c.s
+.PHONY : fr_brute_force.c.s
+
+fr_filler.o: fr_filler.c.o
+
+.PHONY : fr_filler.o
+
+# target to build an object file
+fr_filler.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_filler.c.o
+.PHONY : fr_filler.c.o
+
+fr_filler.i: fr_filler.c.i
+
+.PHONY : fr_filler.i
+
+# target to preprocess a source file
+fr_filler.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_filler.c.i
+.PHONY : fr_filler.c.i
+
+fr_filler.s: fr_filler.c.s
+
+.PHONY : fr_filler.s
+
+# target to generate assembly for a file
+fr_filler.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_filler.c.s
+.PHONY : fr_filler.c.s
+
 fr_main.o: fr_main.c.o
 
 .PHONY : fr_main.o
@@ -189,6 +243,33 @@ fr_map_list.s: fr_map_list.c.s
 fr_map_list.c.s:
 	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_map_list.c.s
 .PHONY : fr_map_list.c.s
+
+fr_usefull.o: fr_usefull.c.o
+
+.PHONY : fr_usefull.o
+
+# target to build an object file
+fr_usefull.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_usefull.c.o
+.PHONY : fr_usefull.c.o
+
+fr_usefull.i: fr_usefull.c.i
+
+.PHONY : fr_usefull.i
+
+# target to preprocess a source file
+fr_usefull.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_usefull.c.i
+.PHONY : fr_usefull.c.i
+
+fr_usefull.s: fr_usefull.c.s
+
+.PHONY : fr_usefull.s
+
+# target to generate assembly for a file
+fr_usefull.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/fr_usefull.c.s
+.PHONY : fr_usefull.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -2306,12 +2387,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... Filler"
 	@echo "... ft"
+	@echo "... fr_brute_force.o"
+	@echo "... fr_brute_force.i"
+	@echo "... fr_brute_force.s"
+	@echo "... fr_filler.o"
+	@echo "... fr_filler.i"
+	@echo "... fr_filler.s"
 	@echo "... fr_main.o"
 	@echo "... fr_main.i"
 	@echo "... fr_main.s"
 	@echo "... fr_map_list.o"
 	@echo "... fr_map_list.i"
 	@echo "... fr_map_list.s"
+	@echo "... fr_usefull.o"
+	@echo "... fr_usefull.i"
+	@echo "... fr_usefull.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

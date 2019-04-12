@@ -6,13 +6,13 @@
 /*   By: vdanyliu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 16:58:54 by vdanyliu          #+#    #+#             */
-/*   Updated: 2019/04/11 18:23:24 by vdanyliu         ###   ########.fr       */
+/*   Updated: 2019/04/12 17:52:41 by vdanyliu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "filler.h"
 
-static t_map	*add_map_node(int x, int y, char c)
+t_map			*add_map_node(int x, int y, char c)
 {
 	t_map	*node;
 
@@ -25,7 +25,7 @@ static t_map	*add_map_node(int x, int y, char c)
 	return (node);
 }
 
-t_map		*fr_create_map_line(char *str)
+t_map			*fr_create_map_line(char *str)
 {
 	t_map	*head;
 	t_map	*curr;
@@ -47,7 +47,7 @@ t_map		*fr_create_map_line(char *str)
 	return (head);
 }
 
-t_map		*fr_add_map_line(char *str, t_map *head)
+t_map			*fr_add_map_line(char *str, t_map *head)
 {
 	int 	y;
 	t_map	*buff;
@@ -72,7 +72,7 @@ t_map		*fr_add_map_line(char *str, t_map *head)
 	return (buff);
 }
 
-void		fr_free_split(char **split)
+void			fr_free_split(char **split)
 {
 	char 	**head;
 
@@ -83,4 +83,28 @@ void		fr_free_split(char **split)
 		split++;
 	}
 	free(head);
+}
+
+t_map			*ft_free_piece(t_game *game)
+{
+	t_map	*head;
+	t_map	*line;
+	t_map	*buff;
+
+	head = game->piece;
+	while (head)
+	{
+		line = head->next;
+		while (line)
+		{
+			buff = line;
+			line = line->next;
+			free(buff);
+		}
+		buff = head;
+		head = head->down;
+		free(buff);
+	}
+	game->piece = NULL;
+	return (NULL);
 }

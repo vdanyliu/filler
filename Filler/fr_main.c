@@ -6,13 +6,13 @@
 /*   By: vdanyliu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 19:10:26 by vdanyliu          #+#    #+#             */
-/*   Updated: 2019/04/11 19:38:09 by vdanyliu         ###   ########.fr       */
+/*   Updated: 2019/04/12 19:50:47 by vdanyliu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "filler.h"
 
-static t_game	*fr_game_create(char *str, int fd)
+static t_game	*fr_game_create(char *str)
 {
 	t_game	*game;
 	char	*str2;
@@ -20,10 +20,13 @@ static t_game	*fr_game_create(char *str, int fd)
 	game = (t_game*)malloc(sizeof(t_game));
 	game->map = NULL;
 	game->piece = NULL;
-	game->map_list = NULL;
 	str2 = ft_strstr(str, "p");
 	game->player = *(str2 + 1) == '1' ? 1 : 2;
 	free(str);
+	g_enemy = game->player == 1 ? 'X' : 'O';
+	g_me = g_enemy == 'X' ? 'O' : 'X';
+	game->max_xy[0] = -1;
+	game->max_xy[1] = -1;
 	return (game);
 }
 
@@ -47,20 +50,28 @@ static void		fr_map_fill(char *str, t_game *game)
 	free(str);
 }
 
-void			debug_map_print(t_map *map, int fd)
+t_map			*ft_free_enemy(t_game *game)
 {
+	t_map	*head;
 	t_map	*line;
+	t_map	*buff;
 
-	while (map)
+	head = game->enemy_map;
+	while (head)
 	{
-		line = map;
+		line = head->next;
 		while (line)
 		{
-			dprintf(fd, "x = %i, y = %i, symbol = %c\n", line->x, line->y, line->symbol);
+			buff = line;
 			line = line->next;
+			free(buff);
 		}
-		map = map->down;
+		buff = head;
+		head = head->down;
+		free(buff);
 	}
+	game->enemy_map = NULL;
+	return (NULL);
 }
 
 static void		fr_piece_fill(char	*str, t_game *game)
@@ -81,6 +92,9 @@ static void		fr_piece_fill(char	*str, t_game *game)
 		free(gnl);
 		size--;
 	}
+	free(str);
+	fr_free_split(split);
+	fr_map_size(game->map, game);
 }
 
 int				main(void)
@@ -95,20 +109,16 @@ int				main(void)
 	{
 		if (game == NULL)
 		{
-			game = fr_game_create(buff, fd);
-			dprintf(fd, "Player = %i\n", game->player);
+			game = fr_game_create(buff);
 			continue ;
 		}
 		if (ft_strstr(buff, "Piece") == 0)
 		{
 			fr_map_fill(buff, game);
-			//debug_map_print(game->map, fd);
-			dprintf(fd, "GNL = %s\n", buff);
 		}
 		else
 		{
 			fr_piece_fill(buff, game);
-			debug_map_print(game->piece, fd);
 			fr_filler(game);
 		}
 	}
