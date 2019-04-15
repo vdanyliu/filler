@@ -1,0 +1,4 @@
+/Users/vdanyliu/Desktop/Filler/fillervis/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vdanyliu/Desktop/Filler/fillervis/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vdanyliu/Desktop/Filler/fillervis/cmake-build-debug/CMakeFiles/Visualisator.dir
+/Users/vdanyliu/Desktop/Filler/fillervis/cmake-build-debug/CMakeFiles/ft.dir

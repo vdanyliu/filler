@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vdanyliu/Desktop/Filler/fillervis/filler.h
+libft/libft.h
+/Users/vdanyliu/Desktop/Filler/fillervis/libft/libft.h
+mlx.h
+-
+math.h
+-
+
+/Users/vdanyliu/Desktop/Filler/fillervis/fr_v_main.c
+filler.h
+/Users/vdanyliu/Desktop/Filler/fillervis/filler.h
+
+/Users/vdanyliu/Desktop/Filler/fillervis/libft/ft_printf.h
+libft.h
+/Users/vdanyliu/Desktop/Filler/fillervis/libft/libft.h
+stdarg.h
+-
+
+/Users/vdanyliu/Desktop/Filler/fillervis/libft/libft.h
+fcntl.h
+-
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+stdio.h
+-
+sys/stat.h
+-
+sys/types.h
+-
+ft_printf.h
+/Users/vdanyliu/Desktop/Filler/fillervis/libft/ft_printf.h
+
