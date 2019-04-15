@@ -6,7 +6,7 @@
 /*   By: vdanyliu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/22 15:59:51 by vdanyliu          #+#    #+#             */
-/*   Updated: 2019/04/15 15:12:06 by vdanyliu         ###   ########.fr       */
+/*   Updated: 2019/04/15 19:53:56 by vdanyliu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,22 @@ static void		fdf_put_line(t_mlx_ptr *mlx, t_map *map0, t_map *map1)
 
 void			fdf_put_lines(t_mlx_ptr *mlx, t_map *map)
 {
+	int	x;
+
+	x = 0;
 	if (map->next != NULL)
 		fdf_put_line(mlx, map, map->next);
 	if (map->down != NULL)
-		fdf_put_line(mlx, map, map->down);
+	{
+		while (x++ < 10)
+		{
+			fdf_put_line(mlx, map, map->down);
+			map->x++;
+			map->down->x++;
+		}
+		x--;
+		map->x -= x;
+		map->down->x -= x;
+	}
 }
+

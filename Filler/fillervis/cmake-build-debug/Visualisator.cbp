@@ -140,9 +140,6 @@
 		<Unit filename="/Users/vdanyliu/Desktop/Filler/fillervis/fr_v_map_list.c">
 			<Option target="Visualisator"/>
 		</Unit>
-		<Unit filename="/Users/vdanyliu/Desktop/Filler/fillervis/fr_v_usefull.c">
-			<Option target="Visualisator"/>
-		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/Filler/fillervis/libft/ft_atoi.c">
 			<Option target="ft"/>
 		</Unit>

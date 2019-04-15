@@ -26,8 +26,3 @@ CMakeFiles/Visualisator.dir/fr_v_map_list.c.o: ../fr_v_map_list.c
 CMakeFiles/Visualisator.dir/fr_v_map_list.c.o: ../libft/ft_printf.h
 CMakeFiles/Visualisator.dir/fr_v_map_list.c.o: ../libft/libft.h
 
-CMakeFiles/Visualisator.dir/fr_v_usefull.c.o: ../filler.h
-CMakeFiles/Visualisator.dir/fr_v_usefull.c.o: ../fr_v_usefull.c
-CMakeFiles/Visualisator.dir/fr_v_usefull.c.o: ../libft/ft_printf.h
-CMakeFiles/Visualisator.dir/fr_v_usefull.c.o: ../libft/libft.h
-

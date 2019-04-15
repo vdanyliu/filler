@@ -37,7 +37,6 @@ int					fr_filler_print(t_mlx_ptr **mlx);
 t_map				*ft_free_piece(t_game *game);
 void				fr_map_size(t_map *map, t_game *game);
 t_map				*add_map_node(int x, int y, char c);
-int					fr_sum(t_map *a, t_map *b, int x, int y);
 void				fdf_print_map_mlx(t_mlx_ptr *mlx);
 void				fdf_put_lines(t_mlx_ptr *mlx, t_map *map);
 

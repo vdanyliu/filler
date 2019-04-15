@@ -4,7 +4,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Visualisator.dir/fr_v_filler.c.o"
   "CMakeFiles/Visualisator.dir/fr_v_main.c.o"
   "CMakeFiles/Visualisator.dir/fr_v_map_list.c.o"
-  "CMakeFiles/Visualisator.dir/fr_v_usefull.c.o"
   "Visualisator.pdb"
   "Visualisator"
 )

@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/vdanyliu/Desktop/Filler/fillervis/fdf_mlx_print.c
+filler.h
+/Users/vdanyliu/Desktop/Filler/fillervis/filler.h
+
 /Users/vdanyliu/Desktop/Filler/fillervis/filler.h
 libft/libft.h
 /Users/vdanyliu/Desktop/Filler/fillervis/libft/libft.h
@@ -13,10 +17,6 @@ mlx.h
 -
 math.h
 -
-
-/Users/vdanyliu/Desktop/Filler/fillervis/fr_v_main.c
-filler.h
-/Users/vdanyliu/Desktop/Filler/fillervis/filler.h
 
 /Users/vdanyliu/Desktop/Filler/fillervis/libft/ft_printf.h
 libft.h

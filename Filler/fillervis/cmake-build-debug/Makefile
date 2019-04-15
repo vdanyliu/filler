@@ -271,33 +271,6 @@ fr_v_map_list.c.s:
 	$(MAKE) -f CMakeFiles/Visualisator.dir/build.make CMakeFiles/Visualisator.dir/fr_v_map_list.c.s
 .PHONY : fr_v_map_list.c.s
 
-fr_v_usefull.o: fr_v_usefull.c.o
-
-.PHONY : fr_v_usefull.o
-
-# target to build an object file
-fr_v_usefull.c.o:
-	$(MAKE) -f CMakeFiles/Visualisator.dir/build.make CMakeFiles/Visualisator.dir/fr_v_usefull.c.o
-.PHONY : fr_v_usefull.c.o
-
-fr_v_usefull.i: fr_v_usefull.c.i
-
-.PHONY : fr_v_usefull.i
-
-# target to preprocess a source file
-fr_v_usefull.c.i:
-	$(MAKE) -f CMakeFiles/Visualisator.dir/build.make CMakeFiles/Visualisator.dir/fr_v_usefull.c.i
-.PHONY : fr_v_usefull.c.i
-
-fr_v_usefull.s: fr_v_usefull.c.s
-
-.PHONY : fr_v_usefull.s
-
-# target to generate assembly for a file
-fr_v_usefull.c.s:
-	$(MAKE) -f CMakeFiles/Visualisator.dir/build.make CMakeFiles/Visualisator.dir/fr_v_usefull.c.s
-.PHONY : fr_v_usefull.c.s
-
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -2429,9 +2402,6 @@ help:
 	@echo "... fr_v_map_list.o"
 	@echo "... fr_v_map_list.i"
 	@echo "... fr_v_map_list.s"
-	@echo "... fr_v_usefull.o"
-	@echo "... fr_v_usefull.i"
-	@echo "... fr_v_usefull.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

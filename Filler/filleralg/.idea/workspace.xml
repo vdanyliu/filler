@@ -59,10 +59,10 @@
         <option value="$PROJECT_DIR$/fr_filler.c" />
         <option value="$PROJECT_DIR$/../fillervis/fr_main.c" />
         <option value="$PROJECT_DIR$/fr_main.c" />
-        <option value="$PROJECT_DIR$/../fillervis/fdf_mlx_print.c" />
-        <option value="$PROJECT_DIR$/../fillervis/fdf_put_lines.c" />
         <option value="$PROJECT_DIR$/../fillervis/fr_v_filler.c" />
         <option value="$PROJECT_DIR$/../fillervis/fr_v_main.c" />
+        <option value="$PROJECT_DIR$/../fillervis/fdf_put_lines.c" />
+        <option value="$PROJECT_DIR$/../fillervis/fdf_mlx_print.c" />
       </list>
     </option>
   </component>
@@ -146,7 +146,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="874" y="175" width="2024" height="1317" extended-state="1" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25227043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
